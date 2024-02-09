@@ -195,7 +195,7 @@ export const prompter = (
     {
       type: "input",
       name: "issues",
-      message: 'Add issue references (e.g. "fix #123", "re #123".):\n',
+      message: 'Add issue references (e.g. "fixed AB#123", "add AB#123".):\n',
       when(answers: any) {
         return answers.isIssueAffected;
       },
